@@ -1,25 +1,25 @@
 # pip install mahdix
 
-# Print Something
+## Print Something
 ```bash
 from mahdix import p
 
 print(p('YOUR TXT'))
 ```
-# Get Current Time
+## Get Current Time
 ```bash
 from mahdix import time
 
 print(time())
 ```
-# Generate Text Logo
+## Generate Text Logo
 ```bash
 from mahdix import makelogo
 
 logo = makelogo(text='Mahdi')
 print(logo)
 ```
-# Random Numbers
+## Random Numbers
 ```bash
 from mahdix import random7, random8, random9, random1_2, random1_3, random1_4, random10
 
@@ -31,34 +31,34 @@ print(random1_3())
 print(random1_4())
 print(random10())
 ```
-# System Commands
+## System Commands
 ```bash
 from mahdix import sysT
 
 sysT('YOUR COMMAND')
 ```
-# HTTP Requests
+## HTTP Requests
 ```bash
 from mahdix import rqg, rqp
 
 response_get = rqg('https://example.com')
 response_post = rqp('https://example.com', data={'key': 'value'})
 ```
-# Random Choices
+## Random Choices
 ```bash
 from mahdix import rc
 
 print(rc([1, 2, 3, 4]))
 
 ```
-# Base64 Encoding/Decoding
+## Base64 Encoding/Decoding
 ```bash
 from mahdix import bsec, bsdc
 
 encoded_data = bsec('Hello, World!')
 decoded_data = bsdc(encoded_data)
 ```
-# Colors
+## Colors
 ```bash
 # ---[coloure]------
 
@@ -89,14 +89,14 @@ BG_RED = Background_RED
 BG_GREEN = Background_GREEN 
 
 ```
-# get any Facebook id created date
+## get any Facebook id created date
 ```bash
 from mahdix import getyearid
 
 # Example: cid = '100000000023456'
 print(getyearid(cid))
 ```
-# html_txt Function
+## html_txt Function
 The html_txt function fetches HTML content from the specified URL, using optional headers and data for the request.
 ```bash
 from your_module import html_txt
