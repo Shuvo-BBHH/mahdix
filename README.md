@@ -114,3 +114,6 @@ data = {'key': 'value'}  # Optional data for POST requests
 parsed_html = html_txt(url, Headers=headers, Data=data,Cookie=cookie) # data for POST requests 
 parsed_html = html_txt(url, Headers=headers,Cookie=cookie) #  for Get requests 
 print(parsed_html)
+```
+### [Example of  html_txt function](https://github.com/Shuvo-BBHH/mahdix/tree/main/html_txt).
+
