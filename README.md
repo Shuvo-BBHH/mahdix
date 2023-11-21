@@ -4,7 +4,7 @@
 ```bash
 from mahdix import p
 
-print(p('YOUR TXT'))
+p('YOUR TXT')
 ```
 ## Get Current Time
 ```bash
