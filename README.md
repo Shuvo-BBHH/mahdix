@@ -112,7 +112,7 @@ data = {'key': 'value'}  ## Optional data for POST requests
 params = {
     'q': 'params_valu',
     }
-# you can add json--   json_data={"jason" : "valu"}
+# you can add json--   json_data={"json" : "valu"}
 parsed_html = html_req(url, Headers=headers, Data=data,Cookie=cookie,Params=params) ## data for POST requests 
 parsed_html = html_req(url, Headers=headers,Cookie=cookie,Params=params) ##  for Get requests 
 print(parsed_html)
