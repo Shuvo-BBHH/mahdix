@@ -1,5 +1,3 @@
-# pip install mahdix
-
 ## Print Something
 ```bash
 from mahdix import p
@@ -96,10 +94,10 @@ from mahdix import getyearid
 # Example: cid = '100000000023456'
 print(getyearid(cid))
 ```
-## html_txt Function
-The html_txt function fetches HTML content from the specified URL, using optional headers and data for the request.
+## html_req Function
+The html_req function fetches HTML content from the specified URL, using optional headers and data for the request.
 ```bash
-from your_module import html_txt
+from mahdix import html_req
 
 url = 'https://example.com'
 headers = {
@@ -109,11 +107,24 @@ headers = {
     'Accept-Encoding': 'gzip, deflate, br',
     'Connection': 'keep-alive',
 }
-cookie = {'key': 'value'}  # Optional Cookes for POST requests
-data = {'key': 'value'}  # Optional data for POST requests
-parsed_html = html_txt(url, Headers=headers, Data=data,Cookie=cookie) # data for POST requests 
-parsed_html = html_txt(url, Headers=headers,Cookie=cookie) #  for Get requests 
+cookie = {'key': 'value'}  ## Optional Cookes for POST requests
+data = {'key': 'value'}  ## Optional data for POST requests
+params = {
+    'q': 'params_valu',
+    }
+# you can add json--   json_data={"jason" : "valu"}
+parsed_html = html_req(url, Headers=headers, Data=data,Cookie=cookie,Params=params) ## data for POST requests 
+parsed_html = html_req(url, Headers=headers,Cookie=cookie,Params=params) ##  for Get requests 
 print(parsed_html)
 ```
 ### [Example of  html_txt function](https://github.com/Shuvo-BBHH/mahdix/tree/main/html_txt).
 
+
+## html_txt Function
+The html_txt function fetches HTML content from any request responce.
+```bash
+from mahdix import html_txt
+responce=requests.get('https://example.com').text
+text_html = html_txt(responce)
+print(text_html)#get respone as html text
+```
